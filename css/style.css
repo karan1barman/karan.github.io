@@ -1,0 +1,212 @@
+@import url("general-sans.css");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "GeneralSans-Variable"; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 121px;
+  height: 108px;
+  align-items: center; }
+  .header .header__list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 18px; }
+    .header .header__list-items:first-child {
+      font-weight: 600;
+      letter-spacing: -0.25px; }
+  .header__logo-box {
+    font-size: 3.6rem;
+    color: #3254ff;
+    font-family: "Clash Grotesk", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.25px; }
+
+.btn {
+  font-size: 1.8rem;
+  display: flex;
+  text-transform: capitalize;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center; }
+  .btn-cta {
+    width: 16.8rem;
+    height: 4.8rem;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.1s; }
+    .btn-cta:hover {
+      box-shadow: 3px 4px 0 #3254ff; }
+
+.section-intro {
+  margin: 132px 103px 79.3px 120px;
+  display: grid;
+  grid-template-columns: 0.8fr 2.1fr;
+  grid-gap: 119px; }
+
+.col-head {
+  margin-left: 6rem; }
+
+.component-1 {
+  position: relative; }
+
+.sphere {
+  width: 238px;
+  height: 238px;
+  border-radius: 50%; }
+  .sphere-green {
+    background-color: #32ffce;
+    position: absolute;
+    top: 0;
+    right: 33.52%; }
+  .sphere-transparent {
+    position: absolute;
+    top: 0;
+    left: 33.52%;
+    border: 1px solid black; }
+    .sphere-transparent-circle {
+      width: 72px;
+      height: 72px;
+      background-color: #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%; }
+
+.upArrow {
+  color: #3254ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.heading__primary {
+  font-family: "Clash Grotesk";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%; }
+
+.paragraph__primary {
+  font-family: "Clash Grotesk";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 36px;
+  position: relative;
+  display: flex;
+  width: 630px;
+  gap: 18px;
+  align-items: center; }
+  .paragraph__primary::before {
+    display: block;
+    content: "";
+    border: 1px solid #000;
+    width: 148px;
+    background-color: #000; }
+
+.section-team {
+  height: 528px;
+  margin-inline: 12rem;
+  background-image: url("../images/6f4df5163700959.63ea7f569b502.jpg");
+  background-position: bottom;
+  background-size: cover;
+  margin: 10rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden; }
+
+.section-team:hover .intro {
+  transform: translateX(-100%); }
+
+.section-team:hover .contact {
+  display: flex; }
+
+.section-team:hover .skills-back {
+  transform: translateX(-100%); }
+
+.section-team:hover .skills-front {
+  transform: translateX(100%); }
+
+.intro {
+  font-size: 8rem;
+  padding: 2rem;
+  color: white;
+  background-color: black;
+  font-family: "Clash Grotesk";
+  transition: all 0.5s; }
+
+.intro,
+.skills-back,
+.skills-front {
+  word-spacing: 1rem; }
+
+.contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: all 0.5s; }
+
+.skills-front {
+  font-size: 8rem;
+  padding: 2rem;
+  color: white;
+  margin-top: 1rem;
+  width: fit-content;
+  align-self: flex-end;
+  background-color: black;
+  transition: all 0.5s;
+  font-family: "Clash Grotesk"; }
+
+.skills-back {
+  font-size: 8rem;
+  padding: 2rem;
+  color: white;
+  transition: all 0.5s;
+  margin-top: 1rem;
+  float: left;
+  background-color: black;
+  font-family: "Clash Grotesk"; }
+
+.contactus {
+  font-size: 20rem;
+  max-width: 1400px;
+  text-align: center;
+  font-family: "Clash Grotesk";
+  text-transform: uppercase;
+  margin: 0 auto; }
+
+.email,
+.phone {
+  font-size: 5rem;
+  font-family: "GeneralSans-Variable";
+  text-transform: lowercase; }
+
+.section-portfolio {
+  font-family: "Clash Grotesk";
+  text-transform: uppercase;
+  margin: 0 100px; }
+
+.cards {
+  font-size: 5rem; }
+
+.section-resume {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem; }
